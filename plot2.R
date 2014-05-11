@@ -20,12 +20,3 @@ dev.off()
 
 
 
-
-
-
-# Call png device and set pixels to plot 
-png("plot1.png", width=480, height= 480)
-# Create histograph
-hist(two.days$Global_active_power, col= "red", xlab= "Global Active Power (Kilowatts)", ylab= "Frequency", main= "Global Active Power")
-#Turn off device
-dev.off()

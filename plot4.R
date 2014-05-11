@@ -1,6 +1,6 @@
 #Reading data into R
 # Change file path to read data 
-
+ 
 consumption<- read.table("data/household_power_consumption.txt", sep=";",nrows= 2075260, header=TRUE, quote= "", strip.white=TRUE, stringsAsFactors = FALSE, na.strings= "?")
 consumption$DateTime <- paste(as.character(consumption$Date), as.character(consumption$Time), sep = " ")
 consumption$DateTime <- strptime(consumption$DateTime,"%d/%m/%Y %H:%M:%S")
